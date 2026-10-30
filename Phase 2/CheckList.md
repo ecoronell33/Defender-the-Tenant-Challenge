@@ -61,7 +61,7 @@ _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkd
 
 - fo=1: requires receiving servers to send a failure report if DKIM or SPF fails; these reports will be sent to the senders specified in the RUA or RUF fields
 
-**In addition, a strict default policy is configured for users in positions such as Executive or CEO, who are more likely to be targeted by impersonation or phishing attacks.**
+**In addition, a strict default policy is configured in Microsoft Defender for users in roles such as Executive and/or CEO, who are more likely to be targeted by impersonation or phishing attacks.**
 
 ## Third control
 
