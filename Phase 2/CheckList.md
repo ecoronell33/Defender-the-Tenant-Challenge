@@ -21,7 +21,9 @@ Most customers need a service account for sending via SMTP, where the applicatio
 *_Flow: The process of sending messages via an SMTP relay._*
   ![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/ff908ef9f4643341c9027f685cba3afaaa1960fb/Phase%202/SMTPRelay.png)
 
-3) Mail: Configure the SPF, DKIM, and DMARC email authentication protocols. This is essential for reducing phishing emails, which are often a major attack vector for Microsoft 365 users. 
+## Second Checkup
+
+Mail: Configure the SPF, DKIM, and DMARC email authentication protocols. This is essential for reducing phishing emails, which are often a major attack vector for Microsoft 365 users. 
 
 4) Device:  Implement a compliance policy that identifies non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices and reduces data theft.
 
