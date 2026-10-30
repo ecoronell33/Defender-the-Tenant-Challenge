@@ -50,7 +50,8 @@ It monitors the DKIM and SPF filter statuses; if either fails, it follows the es
 ```powershell
 _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkdump.org.pe; ruf=amedina@sharkdump.org.pe; fo=1 
 ```
- 
+Parameters
+
 "v=DMARC1; DMARC version
 
 p=reject ---- Type of action the receiving server will take if DKIM and SPF fail
@@ -59,7 +60,9 @@ rua=mailto:d@rua.contoso.com --- Specifies the senders who will receive a mail t
 
 fo=1 – requires receiving servers to send a failure report if DKIM or SPF fails; these reports will be sent to the senders specified in the RUA or RUF fields
 
-4) Device:  Implement a compliance policy that identifies non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices and reduces data theft.
+## Third control
+
+Device:  Implement a compliance policy that identifies non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices and reduces data theft.
 
 5) Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
 
