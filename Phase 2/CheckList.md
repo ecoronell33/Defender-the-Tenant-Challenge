@@ -11,3 +11,15 @@ It would be added as an additional authentication method.
 4) Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
 
 5) Apps: Restrict SaaS application consent to the administrator. This control is important because it prevents users from granting certain OAuth permissions to malicious applications.
+
+
+## Implantação
+
+1. Registre as aplicações e configure consentimento/roles conforme [ONBOARDING.md](ONBOARDING.md).
+2. Crie PostgreSQL com backup/PITR, TLS e rede privada. Use conta de migração separada da aplicação.
+3. Execute `npm run migrate` como job administrativo. A aplicação Microsoft exige esquema já existente e não migra na inicialização de cada réplica.
+4. Crie runtime com [infra/runtime-permissions.sql](../infra/runtime-permissions.sql). Ele não pode ser dono, superuser ou membro do papel de migração.
+5. Injete `APP_MODE=microsoft`, `NODE_ENV=production`, `PUBLIC_ORIGIN=https://...`, `DATABASE_SSL=require`, credenciais e chaves HMAC via secret store. Configure a quantidade exata de proxies confiáveis em `TRUST_PROXY_HOPS`.
+6. Configure probes `/health/live` e `/health/ready`. Readiness verifica banco/esquema, não todos os serviços Microsoft.
+7. Mantenha pelo menos uma réplica ativa: coleta está no processo web e não executa com escala zero.
+8. Faça a homologação por serviço e revise o volume antes de habilitar clientes adicionais.
