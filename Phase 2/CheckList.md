@@ -50,7 +50,7 @@ It monitors the DKIM and SPF filter statuses; if either fails, it follows the es
 ```powershell
 _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkdump.org.pe; ruf=amedina@sharkdump.org.pe; fo=1 
 ```
-----------
+
 ## Parameters
 
 - "v=DMARC1: DMARC version
