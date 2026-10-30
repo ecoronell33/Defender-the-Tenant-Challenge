@@ -30,12 +30,18 @@ SPF
 Applications and/or SMTP servers authorized to send emails based on the domain
 
 ```powershell
-"v=spf1 include:spf.protection.outlook.com -all"
+sharkdump.org.pe 3600 EN TXT "v=spf1 include:spf.protection.outlook.com -all"
 ```
 
 DKIM
 
 Add a digital signature to every outgoing email. This helps prevent information from being altered in transit and/or verify ownership.
+
+```powershell
+selector1._domainkey 3600 EN CNAME selector1-sharkdump-org-pe._domainkey.lantester.w-v1.dkim.mail.microsoft
+
+selector2._domainkey 3600 EN CNAME selector2-sharkdump-org-pe._domainkey.lantester.w-v1.dkim.mail.microsoft
+```
 
 DMARC
 
