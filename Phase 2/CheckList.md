@@ -7,7 +7,7 @@ MFA: Apply this to all users in the organization. Raise awareness about the use 
 
 It would be added as an additional authentication method.
 
-*_Figure 1: Conditional Access policy settings for MFA for all users._*
+*_Figure 1: Conditional Access policy settings for MFA for all users. Exclude emergency accounts._*
 ![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/2d0d900b6ef31d1c415e5636c8487c32329c6382/Phase%202/Policy_ALL_MFA.png)
 
 
