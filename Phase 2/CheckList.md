@@ -9,6 +9,9 @@ It would be added as an additional authentication method.
 
 ![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/2d0d900b6ef31d1c415e5636c8487c32329c6382/Phase%202/Policy_ALL_MFA.png)
 
+
+![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/d4c78bb35e554035e91e50853162a09f4569c36c/Phase%202/PR-MFA.png)
+
 Most customers need a service account for sending via SMTP, where the applications are legacy systems that do not support MFA requests. Therefore, to resolve this, we will use the SMTP relay method through a connector, specifying the public IP address from which the emails are sent.
 
 * It is recommended to add the public IP address as an additional record to the SPF record.
