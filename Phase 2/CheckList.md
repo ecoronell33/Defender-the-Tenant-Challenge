@@ -18,6 +18,7 @@ Most customers need a service account for sending via SMTP, where the applicatio
 
 * It is recommended to add the public IP address as an additional record to the SPF record.
 
+*_Flow: The process of sending messages via an SMTP relay._*
   ![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/ff908ef9f4643341c9027f685cba3afaaa1960fb/Phase%202/SMTPRelay.png)
 
 3) Mail: Configure the SPF, DKIM, and DMARC email authentication protocols. This is essential for reducing phishing emails, which are often a major attack vector for Microsoft 365 users. 
