@@ -47,6 +47,10 @@ DMARC
 
 It monitors the DKIM and SPF filter statuses; if either fails, it follows the established procedure for rejection or quarantine. 
 
+```powershell
+_dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkdump.org.pe; ruf=amedina@sharkdump.org.pe; fo=1 
+```
+
 4) Device:  Implement a compliance policy that identifies non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices and reduces data theft.
 
 5) Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
