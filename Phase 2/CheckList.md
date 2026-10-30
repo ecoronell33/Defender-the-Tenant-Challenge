@@ -30,7 +30,7 @@ SPF
 Applications and/or SMTP servers authorized to send emails based on the domain
 
 ```powershell
-	"v=spf1 include:spf.protection.outlook.com -all"
+"v=spf1 include:spf.protection.outlook.com -all"
 ```
 
 DKIM
