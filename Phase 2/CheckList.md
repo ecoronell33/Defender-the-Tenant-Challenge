@@ -6,10 +6,10 @@ Your Security Recommendations You’re an M365 security consultant to small and 
 1) MFA: Apply this to all users in the organization. Raise awareness about the use of phishing-resistant authentication methods, such as passkeys, among administrators and senior staff (managers). This control is important because it prevents accounts from being compromised by brute-force attacks, such as token theft.
 It would be added as an additional authentication method.
 
-![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/ff908ef9f4643341c9027f685cba3afaaa1960fb/Phase%202/SMTPRelay.png)
-
 Most customers need a service account for sending via SMTP, where the applications are legacy systems that do not support MFA requests. Therefore, to resolve this, we will use the SMTP relay method through a connector, specifying the public IP address from which the emails are sent.
 * It is recommended to add the public IP address as an additional record to the SPF record.
+
+  ![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/ff908ef9f4643341c9027f685cba3afaaa1960fb/Phase%202/SMTPRelay.png)
 
 3) Mail: Configure the SPF, DKIM, and DMARC email authentication protocols. This is essential for reducing phishing emails, which are often a major attack vector for Microsoft 365 users. 
 
