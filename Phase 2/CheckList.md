@@ -53,13 +53,13 @@ _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkd
 ----------
 ## Parameters
 
-"v=DMARC1; DMARC version
+- "v=DMARC1: DMARC version
 
-p=reject ---- Type of action the receiving server will take if DKIM and SPF fail
+- p=reject: Type of action the receiving server will take if DKIM and SPF fail
 
-rua=mailto:d@rua.contoso.com --- Specifies the senders who will receive a mail traffic report
+- rua=mailto:d@rua.contoso.com: Specifies the senders who will receive a mail traffic report
 
-fo=1 – requires receiving servers to send a failure report if DKIM or SPF fails; these reports will be sent to the senders specified in the RUA or RUF fields
+- fo=1: requires receiving servers to send a failure report if DKIM or SPF fails; these reports will be sent to the senders specified in the RUA or RUF fields
 
 ## Third control
 
