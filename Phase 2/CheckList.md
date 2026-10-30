@@ -25,7 +25,7 @@ Most customers need a service account for sending via SMTP, where the applicatio
 
 Mail: Configure the SPF, DKIM, and DMARC email authentication protocols. This is essential for reducing phishing emails, which are often a major attack vector for Microsoft 365 users. 
 
-SPF
+**SPF**
 
 Applications and/or SMTP servers authorized to send emails based on the domain
 
@@ -33,7 +33,7 @@ Applications and/or SMTP servers authorized to send emails based on the domain
 sharkdump.org.pe 3600 EN TXT "v=spf1 include:spf.protection.outlook.com -all"
 ```
 
-DKIM
+**DKIM**
 
 Add a digital signature to every outgoing email. This helps prevent information from being altered in transit and/or verify ownership.
 
@@ -43,7 +43,7 @@ selector1._domainkey 3600 EN CNAME selector1-sharkdump-org-pe._domainkey.lantest
 selector2._domainkey 3600 EN CNAME selector2-sharkdump-org-pe._domainkey.lantester.w-v1.dkim.mail.microsoft
 ```
 
-DMARC
+**DMARC**
 
 It monitors the DKIM and SPF filter statuses; if either fails, it follows the established procedure for rejection or quarantine. In addition, DMARC verifies that the MAILFROM (the MTA from which the email is sent) matches the FROM domain to reduce instances of identity spoofing.
 
