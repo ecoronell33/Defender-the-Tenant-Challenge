@@ -27,9 +27,16 @@ Mail: Configure the SPF, DKIM, and DMARC email authentication protocols. This is
 
 SPF
 
+Applications and/or SMTP servers authorized to send emails based on the domain
+
 DKIM
 
+Add a digital signature to every outgoing email. This helps prevent information from being altered in transit and/or verify ownership.
+
 DMARC
+
+It monitors the DKIM and SPF filter statuses; if either fails, it follows the established procedure for rejection or quarantine. 
+
 4) Device:  Implement a compliance policy that identifies non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices and reduces data theft.
 
 5) Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
