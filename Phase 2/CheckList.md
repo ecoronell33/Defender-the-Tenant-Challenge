@@ -63,6 +63,8 @@ _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkd
 
 **In addition, a strict default policy is configured in Microsoft Defender for users in roles such as Executive and/or CEO, who are more likely to be targeted by impersonation or phishing attacks.**
 
+**Al establecer una directiva preestablecida estricta, los filtros aplicados pueden tomar correos legitimos como falsos positivos para prevenir ello, se establecera la posiblidad a los usuarios de liberar los correos a traves de una directiva de cuarentena personalizada.**
+
 ## Third control
 
 Device:  Implement a compliance policy that identifies non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices and reduces data theft.
