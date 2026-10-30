@@ -45,11 +45,19 @@ selector2._domainkey 3600 EN CNAME selector2-sharkdump-org-pe._domainkey.lantest
 
 DMARC
 
-It monitors the DKIM and SPF filter statuses; if either fails, it follows the established procedure for rejection or quarantine. 
+It monitors the DKIM and SPF filter statuses; if either fails, it follows the established procedure for rejection or quarantine. In addition, DMARC verifies that the MAILFROM (the MTA from which the email is sent) matches the FROM domain to reduce instances of identity spoofing.
 
 ```powershell
 _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkdump.org.pe; ruf=amedina@sharkdump.org.pe; fo=1 
 ```
+ 
+"v=DMARC1; DMARC version
+
+p=reject ---- Type of action the receiving server will take if DKIM and SPF fail
+
+rua=mailto:d@rua.contoso.com --- Specifies the senders who will receive a mail traffic report
+
+fo=1 – requires receiving servers to send a failure report if DKIM or SPF fails; these reports will be sent to the senders specified in the RUA or RUF fields
 
 4) Device:  Implement a compliance policy that identifies non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices and reduces data theft.
 
