@@ -91,3 +91,6 @@ This measure will allow certain content to be categorized and encrypted so that 
 
 Apps: Restrict SaaS application consent to the administrator. This control is important because it prevents users from granting consent and/or accepting certain OAuth permissions to malicious applications
 
+*_Consent apps._*
+![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/91f752451b1dd41cf6028cc4e7aa9c4a6028d4a1/Phase%202/Consent_and_permissions.png)
+
