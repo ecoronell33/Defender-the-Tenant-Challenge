@@ -72,6 +72,9 @@ _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkd
 
 Device:  Configure the default compliance policy to identify devices that do not meet the requirements, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices. This prevents access to each user’s confidential information even if their account were to be compromised, since it will only allow sign-in from devices that meet certain compliance settings.
 
+*_Compliance Settings._*
+![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/f0aeff2ea038718da8aafb925d0a096ea96b6d12/Phase%202/Compliance%20settings.png)
+
 
 5) Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
 
