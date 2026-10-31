@@ -91,4 +91,3 @@ This measure will allow certain content to be categorized and encrypted so that 
 
 Apps: Restrict SaaS application consent to the administrator. This control is important because it prevents users from granting consent and/or accepting certain OAuth permissions to malicious applications
 
-
