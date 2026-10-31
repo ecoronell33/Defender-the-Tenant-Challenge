@@ -76,9 +76,16 @@ Device:  Configure the default compliance policy to identify devices that do not
 ![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/f0aeff2ea038718da8aafb925d0a096ea96b6d12/Phase%202/Compliance%20settings.png)
 
 
-5) Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
+**Caution is advised if this is disabled in production; therefore, we recommend creating an inventory of devices to identify which ones need to be added to a compliance policy to prevent service disruption.**
 
-6) Apps: Restrict SaaS application consent to the administrator. This control is important because it prevents users from granting certain OAuth permissions to malicious applications.
+## Fourth Control
 
+Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
+
+## Fifth Control
+
+Apps: Configure the default compliance policy to identify non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices. Even if your account were compromised, sign-in would only be allowed from devices that meet specific compliance settings.
+
+Caution is advised if this is disabled in production; therefore, we recommend creating an inventory of devices to identify which ones need to be added to a compliance policy to prevent service disruption.
 
 
