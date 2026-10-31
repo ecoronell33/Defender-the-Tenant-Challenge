@@ -84,8 +84,6 @@ Data: Apply confidentiality labels to sensitive data, such as emails and organiz
 
 ## Fifth Control
 
-Apps: Configure the default compliance policy to identify non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices. Even if your account were compromised, sign-in would only be allowed from devices that meet specific compliance settings.
-
-Caution is advised if this is disabled in production; therefore, we recommend creating an inventory of devices to identify which ones need to be added to a compliance policy to prevent service disruption.
+Apps: Restrict SaaS application consent to the administrator. This control is important because it prevents users from granting consent and/or accepting certain OAuth permissions to malicious applications
 
 
