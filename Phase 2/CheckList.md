@@ -70,7 +70,8 @@ _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkd
 
 ## Third control
 
-Device:  Implement a compliance policy that identifies non-compliant devices, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices and reduces data theft.
+Device:  Configure the default compliance policy to identify devices that do not meet the requirements, along with a conditional access policy. This prevents access to Microsoft 365 applications from untrusted devices. This prevents access to each user’s confidential information even if their account were to be compromised, since it will only allow sign-in from devices that meet certain compliance settings.
+
 
 5) Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
 
