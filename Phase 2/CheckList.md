@@ -65,7 +65,7 @@ _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkd
 
 **When a strict, predefined policy is established, the filters may flag legitimate emails as false positives. To prevent this, users will be able to release these emails through a custom quarantine policy.**
 
-*_Figure 1: Strict protection policies._*
+*_Preset security policies: Strict protection._*
 ![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/150888eeb53bda15d186d5d01324007d1d136fc2/Phase%202/Strict%20Policies.png)
 
 ## Third control
