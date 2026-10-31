@@ -61,9 +61,9 @@ _dmarc.microsoft.com. 3600 EN TXT "v=DMARC1; p=reject; rua=mailto:amedina@sharkd
 
 - fo=1: requires receiving servers to send a failure report if DKIM or SPF fails; these reports will be sent to the senders specified in the RUA or RUF fields
 
-**In addition, a strict default policy is configured in Microsoft Defender for users in roles such as Executive and/or CEO, who are more likely to be targeted by impersonation or phishing attacks.**
+**In addition, Microsoft Defender configures a strict policy by default for users in roles such as executives or CEOs, who are more likely to be targeted by impersonation or phishing attacks.**
 
-**Al establecer una directiva preestablecida estricta, los filtros aplicados pueden tomar correos legitimos como falsos positivos para prevenir ello, se establecera la posiblidad a los usuarios de liberar los correos a traves de una directiva de cuarentena personalizada.**
+**When a strict, predefined policy is established, the filters may flag legitimate emails as false positives. To prevent this, users will be able to release these emails through a custom quarantine policy.**
 
 ## Third control
 
