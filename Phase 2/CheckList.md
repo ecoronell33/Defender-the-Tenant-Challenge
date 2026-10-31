@@ -81,6 +81,8 @@ Device:  Configure the default compliance policy to identify devices that do not
 ## Fourth Control
 
 Data: Apply confidentiality labels to sensitive data, such as emails and organizational documents, to prevent information loss and/or unauthorized access to such data. 
+This measure will allow certain content to be categorized and encrypted so that it can be accessed only by authorized individuals.
+
 
 ## Fifth Control
 
