@@ -84,7 +84,7 @@ Data: Apply confidentiality labels to sensitive data, such as emails and organiz
 This measure will allow certain content to be categorized and encrypted so that it can be accessed only by authorized individuals.
 
 One of the most commonly used document types in SharePoint is PDF; these are also compatible with labeling. However, they are only compatible with Edge.
-To resolve this, we'll use the Microsoft Purview Information Protection agent to apply a label at the Windows level.
+**To resolve this, we'll use the Microsoft Purview Information Protection agent to apply a label at the Windows level.**
 
 *_Sensitivity labels._*
 ![image alt](https://github.com/ecoronell33/Defender-the-Tenant-Challenge/blob/53b472d1c0214de0526cad2f130723f7def8467f/Phase%202/Sensitivity%20labels.png)
